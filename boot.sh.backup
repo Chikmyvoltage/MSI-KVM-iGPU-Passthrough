@@ -1,0 +1,25 @@
+# Set your iGPU pci id (fetched from lspci)
+IGPU_PCIID="8086 3e9b"
+
+./prepareIntelGPUPassthrough.sh
+
+sleep 2
+echo "VFIO then QEMU..."
+
+modprobe vfio_pci
+modprobe vfio
+
+sleep 2
+
+./opencore-boot-pt.sh
+
+sleep 2
+
+modprobe -r vfio_pci
+modprobe -r vfio
+
+modprobe -r vfio_pci_core
+modprobe -r vfio_iommu_type1
+modprobe -r vfio_pci
+modprobe -r vfio
+modprobe i915

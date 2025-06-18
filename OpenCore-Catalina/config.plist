@@ -213,8 +213,17 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>device-id</key>
+				<data>kj4AAA==</data>
+				<key>AAPL,ig-platform-id</key>
+				<data>CQClPg==</data>
+			</dict>
 			<key>PciRoot(0x1)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>device-id</key>
+				<data>kj4AAA==</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>CQClPg==</data>
 			</dict>
@@ -258,24 +267,6 @@
 				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VirtualSMC</string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>VoodooHDA.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooHDA</string>
 				<key>Arch</key>
 				<string>Any</string>
 				<key>MaxKernel</key>
